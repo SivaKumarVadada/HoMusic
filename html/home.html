@@ -1,0 +1,50 @@
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Page</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="../js/home.js" defer></script>
+</head>
+<body onload="headerTitle()">
+    <header>
+        <h1>HoMusic</h1>
+        <h3>Music is a Magic</h3>
+        <span class="homeContainter">
+            <button>Home</button>
+            <button>Info</button>
+        </span>
+        <span class="userContainter">
+            <a id="logout"><button onclick="logOut()">LogOut</button></a>
+            <button id="userName">User-Name</button>
+            <img src="../assests/images/User.png">
+        </span>
+        <a href="#IIndPage"><img id="downArrow" src="../assests/images/downArrow.png"></a>
+        <video src="../assests/videos/headerBgm.mp4" autoplay muted loop></video>
+    </header>
+
+    <div class="IIndContainer" id="IIndPage">
+        <div class="musicContainer">
+            <section class="playContainer">
+                <marquee><h1 id="songTit">Ee Raathale - Raadhe Shyam</h1></marquee>
+                <img id="playPoster" src="../assests/images/1.jpg">
+                <audio id="playSong" src="../assests/audios/1.mp3" controls></audio>
+            </section>
+            <line></line> 
+            <section class="selectContainer">
+                <h2 onclick="playSongs(1)"><img src="../assests/images/1.jpg">Ee Raathale</h2>
+                <h2 onclick="playSongs(2)"><img src="../assests/images/2.jpg">Naatu Naatu</h2>
+                <h2 onclick="playSongs(3)"><img src="../assests/images/3.jpg">Masteru Masteru</h2>
+                <h2 onclick="playSongs(4)"><img src="../assests/images/4.jpg">Srivalli</h2>
+                <h2 onclick="playSongs(5)"><img src="../assests/images/5.jpg">Dheera Dheera</h2>
+                <h2 onclick="playSongs(6)"><img src="../assests/images/6.jpg">Pilla Padesave</h2>
+            </section>
+        </div>
+        <footer>
+            <a href="https://www.facebook.com/profile.php?id=100069249877208&mibextid=ZbWKwL"><img src="../assests/images/facebook.png" alt="facebook"></a>
+            <a href="https://instagram.com/sk.vdd?igshid=ZDdkNTZiNTM="><img src="../assests/images/instagram.png" alt="instagram"></a>
+            <a href="https://youtube.com/@sivakumarvadada6837"><img src="../assests/images/youtube.png" alt="youtube"></a>
+            <a href="https://twitter.com/sk_vdds?t=lPdHhJd5tDJ-ZSTu7CHIgQ&s=08"><img src="../assests/images/twitter.png" alt="twitter"></a>
+        </footer>
+    </div>
+</body>
+</html>

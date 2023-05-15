@@ -1,0 +1,287 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    background: linear-gradient(45deg, #53015c, #16022f);
+}
+header
+{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+header #maiHead
+{
+    color: white;
+    font-size: 10em;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 28vh;
+    left: 25vw;
+    transform: scale(0);
+    transition: transform 3s; 
+    z-index: 1;
+}
+header h3
+{
+    color: white;
+    font-size: 1.4em;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.4em;
+    word-spacing: 1.4em;
+    position: absolute;
+    /* top: 52vh; */
+    left: 12vw;
+    top: 120vh;
+    transform: scale(0);
+    filter: opacity(0);
+    transition: 4s; 
+    z-index: 2;
+}
+header .homeContainter
+{
+    width: 20%;
+    height: 6vh;
+    position: absolute;
+    top: 8vh;
+    left: 6vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+}
+header button
+{
+    width: 20%;
+    height: 4vh;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: none;
+    background: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+header .userContainter
+{
+    width: 10%;
+    height: 6vh;
+    position: absolute;
+    top: 8vh;
+    right: 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+header button:hover
+{
+    color: #9500a5;
+}
+header #downArrow
+{
+    width: 4%;
+    position: absolute;
+    top: 90%;
+    left: 48%;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 3;
+}
+header #downArrow:hover
+{
+    top: 92%;
+}
+
+#loginContainer
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    display: none;
+}
+#loginContainer .loginContainer
+{
+    width: 380px;
+    height: 60vh;
+    background: linear-gradient(-145deg, #9500a5, #5f26a4);
+    border-radius: 0.6em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.loginContainer #logTit
+{
+    color: white;
+    font-weight: bold;
+    font-size: 2.3em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1em;
+    margin-bottom: -4vh;
+    margin-top: 2vh;
+}
+.loginContainer line
+{
+    width: 100%;
+    height: 1px;
+    background: white;
+    margin-top: 6vh;
+}
+.loginContainer form
+{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+section
+{
+    width: 100%;
+    height:5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.loginContainer form input
+{
+    width: 100%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.3em;
+    padding-left: 0.6vw;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+form .emphContainer
+{
+    margin-top: 4vh;
+}
+form .passContainer
+{
+    margin-bottom: -2vh;
+    position: relative;
+}
+form .passContainer img
+{
+    width: 8%;
+    border-radius: 100%;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.523));
+    position: absolute;
+    right: 0.3vw;
+    top: 0.5vh;
+    cursor: pointer;
+}
+form .wrngContainer
+{
+    color: white;
+    margin-top: -2vh;
+    position: relative;
+}
+form .wrngContainer p
+{
+    color: yellow;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 2px;
+}
+form .submContainer input
+{
+    width: 40%;
+    height: 100%;
+    /* color: white; */
+    color: #16022f;
+    letter-spacing: 0.1em;
+    font-weight: bolder;
+    font-size: 1em;
+    background: linear-gradient(35deg, rgb(247, 136, 255), rgb(238, 0, 255));
+    cursor: pointer;
+}
+.submContainer input:hover
+{
+    background: rgb(243, 73, 255);
+}
+.submContainer input:active
+{
+    background: rgb(255, 0, 187);
+}
+form .singContainer
+{
+    text-align:center;
+    margin-bottom: -1vh;
+}
+form span
+{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -1vh;
+}
+form span a
+{
+    color: white;
+    /* color: rgb(255, 98, 229); */
+    font-weight: bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration-line: none;
+    filter: drop-shadow(0px 0px 5px rgba(23, 0, 22, 0.675));
+}
+form span a:hover
+{
+    color:rgb(238, 0, 255);
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.479));
+}
+@media screen and (max-width: 600px)
+{
+    header #maiHead
+    {
+        font-size: 4em;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 40vh;
+        left: 10vw;
+
+    }
+    header h3
+    {
+        font-size: 1em;
+        letter-spacing: 0.5em;
+        word-spacing: 1.4em;
+        left: 8vw;
+    }
+    header .userContainter
+    {
+        right: 12vw;
+    }
+    header .homeContainter
+    {
+        width: 50%;
+        left: 0vw;
+    }
+    #loginContainer .loginContainer
+    {
+        width: 70%;
+        height: 45vh;
+    }
+    .loginContainer form
+    {
+        width: 250px;
+    }
+    
+}

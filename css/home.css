@@ -1,0 +1,342 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    height: 100vh;
+    background: linear-gradient(45deg, #53015c, #16022f);
+}
+header
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+header video
+{
+    width: 100%;
+    height: 110vh;
+    margin-top: 0px;
+    background-size: 100%;
+    filter: opacity(0.4);
+}
+header h1
+{
+    color: white;
+    font-size: 10em;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 28vh;
+    left: 24vw;
+    transform: scale(0);
+    transition: transform 3s; 
+    z-index: 1;
+    cursor: default;
+}
+header h3
+{
+    color: white;
+    font-size: 1.4em;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.4em;
+    word-spacing: 1.4em;
+    position: absolute;
+    left: 12vw;
+    top: 120vh;
+    transform: scale(0);
+    filter: opacity(0);
+    transition: 4s; 
+    z-index: 2;
+    cursor: default;
+}
+header .homeContainter
+{
+    width: 20%;
+    height: 6vh;
+    position: absolute;
+    top: 8vh;
+    left: 6vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+}
+header button
+{
+    width: 40%;
+    height: 4vh;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: none;
+    background: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+header .userContainter
+{
+    width: 24%;
+    height: 6vh;
+    position: absolute;
+    top: 8vh;
+    right: 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+header button:hover
+{
+    color: #9500a5;
+}
+header .userContainter img
+{
+    width: 15%;
+    margin-top: -0.5vh;
+    margin-left: -2vw;
+    cursor: pointer;
+}
+header #downArrow
+{
+    width: 4%;
+    position: absolute;
+    top: 90%;
+    left: 48%;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 3;
+}
+header #downArrow:hover
+{
+    top: 92%;
+}
+.IIndContainer
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.IIndContainer .musicContainer
+{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section
+{
+    width: 30%;
+    height: 70vh;
+    border-radius: 0.6em;
+    /* background:#9500a5; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.IIndContainer line
+{
+    width: 0.1%;
+    height: 80vh;
+    background:#9400a578;
+}
+.playContainer marquee
+{
+    width: 96%;
+}
+.playContainer h1
+{
+    width: 90%;
+    color: white;
+    font-size: 2em;
+    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+}
+.playContainer img
+{
+    width: 54%;
+    height: 46vh;
+    background-size: 100%;
+    border-radius: 0.4em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+}
+.playContainer audio
+{
+    width: 80%;
+    height: 10vh;
+    border-radius: 0.8em;
+    background-image: transparent;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.45));
+    margin-bottom: 4vh;
+}
+.selectContainer h2
+{
+    width: 60%;
+    color: rgb(251, 0, 255);
+    font-size: 1em;
+    font-weight: lighter;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    letter-spacing: 0.1em;
+    margin-top: -10vh;
+    margin-bottom: -5vh;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.selectContainer h2:hover
+{
+    color: white;
+}
+.selectContainer h2 img
+{
+    width: 6vh;
+    height: 6vh;
+    border-radius: 100%;
+    margin-right: 2vw;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+footer
+{
+    width: 30%;
+    height: 6vh;
+    border-radius: 50px;
+    border: 2px solid rgba(251, 0, 255, 0.388);
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.447);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer a
+{
+    width: 10%;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+footer a img
+{
+    width: 80%;
+    border-radius: 0.2em;
+    transition: transform 1s;
+}
+footer img:hover
+{
+    transform: scale(1.3);
+    background:radial-gradient(#ec44ff4d, #8800973f);
+    box-shadow: 0px 0px 4px #16022f8f;
+}
+@media screen and (max-width: 600px)
+{
+    header
+    {
+        background-image: url("../assests/images/Back.png");
+        background-size: 120% 100vh;
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+    header h1
+    {
+        font-size: 4em;
+        top: 40vh;
+        left: 12vw;
+    }
+    header h3
+    {
+        font-size: 0.9em;
+        letter-spacing: 0.5em;
+    }
+    header video
+    {
+        display: none;
+    }
+    header .homeContainter
+    {
+        width: 40%;
+        top: 8vh;
+        left: 4vw;
+    }
+    header .userContainter
+    {
+        width: 20%;
+        top: 8vh;
+        right: 6vw;
+    }
+    header .userContainter img,#userName
+    {
+        display: none;
+    }
+    header #downArrow
+    {
+        width: 8%;
+    }
+    section
+    {
+        width: 100%;
+        height: 45vh;
+    }
+    .IIndContainer .musicContainer
+    {
+        height: 80vh;
+        flex-direction: column;
+    }
+    .playContainer
+    {
+        height: 50vh;
+        justify-content: space-evenly;
+    }
+    #playPoster
+    {
+        height: 35vh;
+    }
+    .playContainer audio
+    {
+        width: 60%;
+        height: 4vh;
+        margin-top: 2vh;
+    }
+    .IIndContainer line
+    {
+        width: 100%;
+        height: 2px;
+    }
+    .selectContainer
+    {
+        height: 50vh;
+        justify-content: space-evenly;
+    }
+    .selectContainer h2 img
+    {
+        display: none;
+    }
+    .selectContainer h2
+    {
+        width: 40%;
+        height: 4vh;
+        font-size: 1em;
+        margin-top: -2vh;
+        margin-bottom: -2vh;
+        align-items: center;
+    }
+    footer
+    {
+        width: 80%;
+        height: 6vh;
+        bottom: -10vh;
+    }
+}

@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, scale=1.0">
+    <title>Home-Page</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" defer></script>
+</head>
+<body onload="headerTitle()">
+    <header>
+        <div id="loginContainer">
+            <section class="loginContainer">
+                <h1 id="logTit">Login</h1>
+                <line></line>
+                <form>
+                    <section class="emphContainer">
+                        <input type="text" required placeholder="Mobile or Email">
+                    </section>
+                    <section class="passContainer">
+                        <input type="password" required placeholder="Password">
+                        <img src="./assests/images/passHide.png" onmouseup="passHide()" onmousedown="passView()">
+                    </section>
+                    <section class="wrngContainer">
+                        <p></p>
+                    </section>
+                    <section class="submContainer">
+                        <input type="button" value="Submit" onclick="checkLogInfo()">
+                    </section>
+                    <section class="singContainer">
+                        <span>If you don't have account. Please, <a href="./html/sign.html">Sign-In</a></span>
+                    </section>    
+                </form>
+            </section>
+        </div>
+        <h1 id="maiHead">HoMusic</h1>
+        <h3 id="subHead">Music is a Magic</h3>
+        <span class="homeContainter">
+            <button onclick="logOut()">Home</button>
+            <button onclick="logOut()">Info</button>
+        </span>
+        <span class="userContainter">
+            <a id="logout"><button onclick="logOut()">LogIn</button></a>
+        </span>
+    </header>
+</body>
+</html>

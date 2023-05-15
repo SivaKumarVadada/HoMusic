@@ -1,0 +1,208 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    height: 100vh;
+    background: linear-gradient(45deg, #53015c, #16022f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headTit
+{
+    color: white;
+    font-size: 2em;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 8vh;
+    right: 8vw;
+}
+.container
+{
+    width: 400px;
+    height: 550px;
+    background: linear-gradient(-145deg, #9500a5, #5f26a4);
+    border-radius: 0.6em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.container h1
+{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1em;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+.container line
+{
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+.infoContainer
+{
+    width: 100%;
+    height: 500;
+    /* background: blue; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+section
+{
+    width: 90%;
+    height: 40px;
+    /* background: rgba(0, 0, 255, 0.189); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input
+{
+    border: none;
+    outline: none;
+    border-radius: 0.3em;
+    padding-left: 0.6vw;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.nameContainer input
+{
+    width: 48%;
+    height: 40px;
+}
+.emailContainer input, .passContainer input
+{
+    width: 360px;
+    height: 40px;   
+}
+.dobContainer select
+{
+    width: 32%;
+    height: 40px;
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.6vw; 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.genderContainer span
+{
+    width: 29%;
+    height: 40px;
+    font-size: 0.85em;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    border: none;
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 0.3em;
+    padding-left: 0.6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0.6vw;
+}
+.genderContainer span input
+{
+    box-shadow: none;
+}
+h2
+{
+    color: white;
+    font-size: 0.9em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    margin-bottom: -2px;
+    margin-left: -270.5px
+}
+.dobContainer+h2
+{
+    margin-left: -310.5px
+}
+.paraContainer p
+{
+    font-size: 0.8em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(211, 211, 211);
+    text-align: justify;
+}
+.subContainer
+{
+    margin-bottom: -2px;
+    display: flex;
+    justify-content: center;  
+}
+.subContainer input
+{
+    width: 120px;
+    height: 40px;
+    /* color: white; */
+    color: #16022f;
+    letter-spacing: 0.1em;
+    font-weight: bolder;
+    font-size: 1em;
+    background: linear-gradient(35deg, rgb(247, 136, 255), rgb(238, 0, 255));
+    cursor: pointer;
+}
+.subContainer input:hover
+{
+    background: rgb(243, 73, 255);
+}
+.subContainer input:active
+{
+    background: rgb(255, 0, 187);
+}
+.loginContainer
+{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginContainer a
+{
+    color: white;
+    font-size: 1.1em;
+    font-weight: bolder;
+    text-decoration-line: none;
+    filter: drop-shadow(0px 0px 4px rgba(21, 0, 20, 0.479));
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.loginContainer a:hover
+{
+    color:rgb(238, 0, 255);
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.479));
+}
+@media screen and (max-width:600px) {
+    .container
+    {
+        width: 300px;
+        height: 500px;
+    }
+    .genderContainer span
+    {
+        width: 30%;
+    }
+    h2
+    {
+        margin-left: -180px
+    }
+    .dobContainer+h2
+    {
+        margin-left: -220px
+    }
+    .loginContainer
+    {
+        font-size: 0.9em;
+    }
+}

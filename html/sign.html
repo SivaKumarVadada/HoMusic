@@ -1,0 +1,128 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, scale=1.0">
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="../css/sign.css">
+    <script src="../js/sign.js" defer></script>
+</head>
+<body>
+    <h1 class="headTit">HoMusic</h1>
+    <div class="container">
+        <h1>SignIn</h1>
+        <line></line>
+        <form class="infoContainer">
+            <section class="nameContainer">
+                <input type="text" required placeholder="First name">
+                <input type="text" required placeholder="Surname">
+            </section>
+            <section class="emailContainer">
+                <input type="text" required placeholder="Mobile number or email address">
+            </section>
+            <section class="passContainer">
+                <input type="password" required placeholder="New password">
+            </section>
+            <h2>Date of Birth</h2>
+            <section class="dobContainer">
+                <select>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+                <select>
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                    <option>Apl</option>
+                    <option>May</option>
+                    <option>Jun</option>
+                    <option>Jul</option>
+                    <option>Aug</option>
+                    <option>Sep</option>
+                    <option>Oct</option>
+                    <option>Nov</option>
+                    <option>Dec</option>
+                </select>
+                <select>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>2000</option>
+
+                </select>
+            </section>
+            <h2>Gender</h2>
+            <section class="genderContainer">
+                <span>
+                    <label>Male  </label><input type="radio" name="gender" value="Male" required onclick="genderVal(this.value)">
+                </span>
+                <span>
+                    <label>Female</label><input type="radio" name="gender" value="Female" required onclick="genderVal(this.value)">
+                </span>
+                <span>
+                    <label>Others</label><input type="radio" name="gender" value="Others" required onclick="genderVal(this.value)">
+                </span>
+
+            </section>
+            <section class="paraContainer">
+                <p>
+                    People who use our service may have uploaded your contact information to Facebook. Learn more.
+                </p>
+            </section>
+            <section class="subContainer">
+                <input type="submit" onclick="signUserInfo()">
+            </section>
+            <section class="loginContainer">
+                <p>If you have already account. Please, <a href="../index.html">Login</a></p>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
